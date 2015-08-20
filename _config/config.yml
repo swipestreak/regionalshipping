@@ -1,0 +1,22 @@
+---
+Name: streak-regional-shipping-config
+---
+Order:
+  extensions:
+    - StreakRegionalShipping_OrderExtension
+OrderForm:
+  extensions:
+    - StreakRegionalShipping_OrderFormExtension
+Product:
+  extensions:
+    - StreakRegionalShipping_ShippableExtension
+Region_Shipping:
+  extensions:
+    - StreakRegionalShipping_RegionExtension
+StreakRegionalShipping_ShippableRegion:
+  extensions:
+    - StreakRegionalShipping_ShippableRegionExtension
+StreakAdmin:
+  managed_models:
+    StreakRegionalShipping_ShippableRegion:
+      title: 'Shipping Regions'
